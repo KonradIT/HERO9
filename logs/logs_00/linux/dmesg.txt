@@ -1,0 +1,309 @@
+[    0.000000] Booting Linux on physical CPU 0xf03
+[    0.000000] Initializing cgroup subsys cpuset
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 4.4.15 (ubuntu@635cec8db5dc) (gcc version 4.9.2 (GCC) ) #1 SMP PREEMPT Mon Aug 17 01:58:32 UTC 2020
+[    0.000000] CPU: ARMv7 Processor [410fc075] revision 5 (ARMv7), cr=50c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine model: Socionext SC2000A EVB w/ RTOS VBD
+[    0.000000] Memory policy: Data cache writealloc
+[    0.000000] On node 0 totalpages: 20992
+[    0.000000] free_area_init_node: node 0, pgdat 80642780, node_mem_map 85150000
+[    0.000000]   DMA zone: 164 pages used for memmap
+[    0.000000]   DMA zone: 0 pages reserved
+[    0.000000]   DMA zone: 20992 pages, LIFO batch:3
+[    0.000000] PERCPU: Embedded 12 pages/cpu @8511d000 s19712 r8192 d21248 u49152
+[    0.000000] pcpu-alloc: s19712 r8192 d21248 u49152 alloc=12*4096
+[    0.000000] pcpu-alloc: [0] 0 [0] 1 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 20828
+[    0.000000] Kernel command line: consoleblank=0 loglevel=4 init=/sbin/finit root=/dev/nandblk rootwait ro nr_cpus=2 maxcpus=1 console=ttyUSI0,115200n8 console=/dev/tty1 
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Memory: 76212K/83968K available (3600K kernel code, 296K rwdata, 2284K rodata, 200K init, 310K bss, 7756K reserved, 0K cma-reserved, 0K highmem)
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xffc00000 - 0xfff00000   (3072 kB)
+[    0.000000]     vmalloc : 0x85800000 - 0xff800000   (1952 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0x85200000   (  82 MB)
+[    0.000000]     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+[    0.000000]     modules : 0x7f800000 - 0x7fe00000   (   6 MB)
+[    0.000000]       .text : 0x80008000 - 0x805c7618   (5886 kB)
+[    0.000000]       .init : 0x805c8000 - 0x805fa000   ( 200 kB)
+[    0.000000]       .data : 0x805fa000 - 0x806443c0   ( 297 kB)
+[    0.000000]        .bss : 0x80646000 - 0x80693b40   ( 311 kB)
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] 	Build-time adjustment of leaf fanout to 32.
+[    0.000000] 	RCU restricting CPUs from NR_CPUS=4 to nr_cpu_ids=2.
+[    0.000000] RCU: Adjusting geometry for rcu_fanout_leaf=32, nr_cpu_ids=2
+[    0.000000] NR_IRQS:16 nr_irqs:16 16
+[    0.000000] NO_HZ: Clearing 0 from nohz_full range for timekeeping
+[    0.000000] NO_HZ: Full dynticks CPUs: 1.
+[    0.000000] 	Note: kernel parameter 'rcu_nocbs=' contains nonexistent CPUs.
+[    0.000000] 	Offload RCU callbacks from CPUs: 1.
+[    0.000000] clocksource: peri-timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 70787423951 ns
+[    0.000000] Architected cp15 timer(s) running at 40.00MHz (phys).
+[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x939a85c40, max_idle_ns: 440795202120 ns
+[    0.000011] sched_clock: 56 bits at 40MHz, resolution 25ns, wraps every 4398046511100ns
+[    0.000035] Switching to timer-based delay loop, resolution 25ns
+[    0.001345] Console: colour dummy device 80x30
+[    0.001380] Calibrating delay loop... 79.87 BogoMIPS (lpj=399360)
+[    0.079764] pid_max: default: 32768 minimum: 301
+[    0.079993] Security Framework initialized
+[    0.080089] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.080109] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.081364] Initializing cgroup subsys debug
+[    0.081442] CPU: Testing write buffer coherency: ok
+[    0.081971] Setting up static identity map for 0x40008280 - 0x400082cc
+[    0.082362] MCPM boot on cpu_3 cluster_15
+[    0.130444] Brought up 1 CPUs
+[    0.130465] SMP: Total of 1 processors activated (79.87 BogoMIPS).
+[    0.130478] CPU: All CPU(s) started in SVC mode.
+[    0.131577] devtmpfs: initialized
+[    0.150366] VFP support v0.3: implementor 41 architecture 2 part 30 variant 7 rev 5
+[    0.151031] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.160255] pinctrl core: initialized pinctrl subsystem
+[    0.160970] regulator-dummy: no parameters
+[    0.162034] NET: Registered protocol family 16
+[    0.162730] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.190191] cpuidle: using governor ladder
+[    0.220213] cpuidle: using governor menu
+[    0.228605] hw-breakpoint: found 5 (+1 reserved) breakpoint and 4 watchpoint registers.
+[    0.228624] hw-breakpoint: maximum watchpoint size is 8 bytes.
+[    0.229129] find no power domain device.
+[    0.301657] SCSI subsystem initialized
+[    0.302070] usbcore: registered new interface driver usbfs
+[    0.302161] usbcore: registered new interface driver hub
+[    0.302292] usbcore: registered new device driver usb
+[    0.302480] media: Linux media interface: v0.10
+[    0.302566] Linux video capture interface: v2.00
+[    0.304230] clocksource: Switched to clocksource arch_sys_counter
+[    0.304740] FS-Cache: Loaded
+[    0.317383] NET: Registered protocol family 2
+[    0.318632] TCP established hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.318670] TCP bind hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.318704] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.318800] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.318852] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.319190] NET: Registered protocol family 1
+[    0.319267] PCI: CLS 0 bytes, default 64
+[    0.320839] Lineo Warp!! module loaded
+[    0.321874] futex hash table entries: 512 (order: 3, 32768 bytes)
+[    0.333130] VFS: Disk quotas dquot_6.6.0
+[    0.333222] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    0.334020] romfs: ROMFS MTD (C) 2007 Red Hat, Inc.
+[    0.347978] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 252)
+[    0.348007] io scheduler noop registered
+[    0.348026] io scheduler deadline registered
+[    0.348060] io scheduler cfq registered (default)
+[    0.348278] milbeaut-pinctrl 1d022000.pinctrl: continuing without EXIU support
+[    0.351682] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+[    0.353778] 1e700010.usio_uart: ttyUSI0 at MMIO 0x1e700010 (irq = 21, base_baud = 6250000) is a sn-usio-uart
+[    0.358145] console [ttyUSI0] enabled
+[    0.534717] brd: module loaded
+[    0.556888] loop: module loaded
+[    0.567300] sni_ipcu_ch_init:225 [ERROR] request_irq ACK is failed. ret=-22 IRQ=0 devname=[]
+[    0.567313] vblk_ipcu_init:242 Cannot init send ipcu channel. -retry probe-
+[    0.568429] tun: Universal TUN/TAP device driver, 1.6
+[    0.568441] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.570972] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.570993] ehci-pci: EHCI PCI platform driver
+[    0.571095] ehci-platform: EHCI generic platform driver
+[    0.571271] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.571300] ohci-platform: OHCI generic platform driver
+[    0.571816] usbcore: registered new interface driver usb-storage
+[    0.572171] usbcore: registered new interface driver uvcvideo
+[    0.572181] USB Video Class driver (1.1.1)
+[    0.572344] sdhci: Secure Digital Host Controller Interface driver
+[    0.572354] sdhci: Copyright(c) Pierre Ossman
+[    0.572641] f_sdh30 1b000000.mmc: sdhci_f_sdh30_probe: starting host
+[    0.604309] f_sdh30 1b000000.mmc: Looking up vmmc-supply from device tree
+[    0.604332] f_sdh30 1b000000.mmc: Looking up vmmc-supply property in node /mmc@1b000000 failed
+[    0.604354] f_sdh30 1b000000.mmc: Looking up vqmmc-supply from device tree
+[    0.604371] f_sdh30 1b000000.mmc: Looking up vqmmc-supply property in node /mmc@1b000000 failed
+[    0.604386] f_sdh30 1b000000.mmc: No vmmc regulator found
+[    0.604400] f_sdh30 1b000000.mmc: No vqmmc regulator found
+[    0.669299] mmc0: SDHCI controller on f_sdh30 [1b000000.mmc] using ADMA
+[    0.687205] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.688026] usbcore: registered new interface driver usbhid
+[    0.688035] usbhid: USB HID core driver
+[    0.691101] exFAT: FS Version 1.2.4
+[    0.691168] exFAT: Core Version 1.2.4
+[    0.691295] Netfilter messages via NETLINK v0.30.
+[    0.691415] nf_conntrack version 0.5.0 (1190 buckets, 4760 max)
+[    0.691675] ctnetlink v0.93: registering with nfnetlink.
+[    0.691946] xt_time: kernel timezone is -0000
+[    0.692621] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    0.692980] NET: Registered protocol family 10
+[    0.704090] sit: IPv6 over IPv4 tunneling driver
+[    0.707201] NET: Registered protocol family 17
+[    0.707232] tipc: Activated (version 2.0.0)
+[    0.707311] NET: Registered protocol family 30
+[    0.707539] tipc: Started in single node mode
+[    0.707805] Registering SWP/SWPB emulation handler
+[    0.708678] registered taskstats version 1
+[    0.720674] Key type encrypted registered
+[    0.771193] EXT4-fs (nandblk): couldn't mount as ext3 due to feature incompatibilities
+[    0.780023] EXT4-fs (nandblk): couldn't mount as ext2 due to feature incompatibilities
+[    0.796308] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[    0.803891] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[    0.807247] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[    0.807946] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[    0.821401] EXT4-fs (nandblk): mounted filesystem with ordered data mode. Opts: (null)
+[    0.821462] VFS: Mounted root (ext4 filesystem) readonly on device 254:0.
+[    0.824531] mmc0: queuing unknown CIS tuple 0x80 (1 bytes)
+[    0.824603] mmc0: queuing unknown CIS tuple 0x81 (1 bytes)
+[    0.824752] mmc0: queuing unknown CIS tuple 0x82 (1 bytes)
+[    0.824796] mmc0: new ultra high speed 1SDR104 SDIO card at address 0001
+[    0.825528] devtmpfs: mounted
+[    0.826025] Freeing unused kernel memory: 200K (805c8000 - 805fa000)
+[    0.826035] This architecture does not have kernel memory protection.
+[    1.055499] random: dbus-daemon urandom read with 33 bits of entropy available
+[    2.512211] Loading modules backported from Linux version v4.4.2-0-g1cb8570
+[    2.512236] Backport generated by backports.git v4.4.2-1-0-gbec4037
+[    2.537165] cfg80211: World regulatory domain updated:
+[    2.537187] cfg80211:  DFS Master region: unset
+[    2.537197] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[    2.537212] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (300 mBi, 2000 mBm), (N/A)
+[    2.537227] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (300 mBi, 2000 mBm), (N/A)
+[    2.537242] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (300 mBi, 2000 mBm), (N/A)
+[    2.537256] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (300 mBi, 2000 mBm), (N/A)
+[    2.537299] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (300 mBi, 2000 mBm), (N/A)
+[    2.537314] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[    2.627447] random: nonblocking pool is initialized
+[    3.595718] sh (169): drop_caches: 3
+[    3.762577] using random self ethernet address
+[    3.780939] using random host ethernet address
+[    3.801659] usb0: HOST MAC 86:bd:fb:12:b7:b3
+[    3.801935] usb0: MAC c6:51:7c:a9:a4:e8
+[    3.802126] using random self ethernet address
+[    3.832815] using random host ethernet address
+[    3.856175] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    3.856197] g_ether gadget: g_ether ready
+[    3.918799] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   13.784681] PM: suspend entry 2020-10-23 22:36:00.783796800 UTC
+[   13.784705] PM: Syncing filesystems ... done.
+[   13.784967] PM: Preparing system for sleep (mem)
+[   13.788146] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[   13.790184] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   13.791453] PM: Suspending system (mem)
+[   13.791465] Suspending console(s) (use no_console_suspend to debug)
+[   13.802373] PM: suspend of devices complete after 3.846 msecs
+[   13.802692] PM: late suspend of devices complete after 0.308 msecs
+[   13.803015] PM: noirq suspend of devices complete after 0.314 msecs
+[   13.803020] Disabling non-boot CPUs ...
+[   13.803024] SUSPEND
+[   13.803495] PM: noirq resume of devices complete after 0.428 msecs
+[   13.803889] PM: early resume of devices complete after 0.286 msecs
+[   13.900371] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   13.907813] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   13.911102] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   13.911778] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   13.915346] PM: resume of devices complete after 111.438 msecs
+[   13.939698] PM: Finishing wakeup.
+[   13.939712] Restarting tasks ... done.
+[   13.948594] PM: suspend exit 2020-10-23 22:36:14.722093475 UTC
+[   23.573108] copy_logs_to_sd (245): drop_caches: 3
+[   25.140601] sys_suspend_res (263): drop_caches: 3
+[   25.140860] PM: suspend entry 2020-10-23 22:36:26.188832925 UTC
+[   25.140873] PM: Syncing filesystems ... done.
+[   25.141123] PM: Preparing system for sleep (mem)
+[   25.141448] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[   25.143671] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   25.144958] PM: Suspending system (mem)
+[   25.144972] Suspending console(s) (use no_console_suspend to debug)
+[   25.157490] PM: suspend of devices complete after 3.989 msecs
+[   25.157795] PM: late suspend of devices complete after 0.294 msecs
+[   25.158123] PM: noirq suspend of devices complete after 0.319 msecs
+[   25.158129] Disabling non-boot CPUs ...
+[   25.158133] SUSPEND
+[   25.158688] PM: noirq resume of devices complete after 0.507 msecs
+[   25.159125] PM: early resume of devices complete after 0.375 msecs
+[   25.260463] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   25.268135] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   25.271481] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   25.272157] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   25.275693] PM: resume of devices complete after 116.549 msecs
+[   25.300072] PM: Finishing wakeup.
+[   25.300086] Restarting tasks ... done.
+[   25.303984] PM: suspend exit 2020-10-23 22:36:26.352029775 UTC
+[   26.432927] womDaemon (205): drop_caches: 3
+[   31.773991] sys_suspend_res (285): drop_caches: 3
+[   31.774739] PM: suspend entry 2020-10-23 22:36:37.498908900 UTC
+[   31.774754] PM: Syncing filesystems ... done.
+[   31.774953] PM: Preparing system for sleep (mem)
+[   31.775346] Freezing user space processes ... (elapsed 0.001 seconds) done.
+[   31.777367] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   31.778628] PM: Suspending system (mem)
+[   31.778639] Suspending console(s) (use no_console_suspend to debug)
+[   31.793163] PM: suspend of devices complete after 3.793 msecs
+[   31.793483] PM: late suspend of devices complete after 0.309 msecs
+[   31.793803] PM: noirq suspend of devices complete after 0.311 msecs
+[   31.793808] Disabling non-boot CPUs ...
+[   31.793813] SUSPEND
+[   31.794504] PM: noirq resume of devices complete after 0.644 msecs
+[   31.794941] PM: early resume of devices complete after 0.375 msecs
+[   31.900396] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   31.908060] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   31.911396] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   31.912075] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   31.915615] PM: resume of devices complete after 120.654 msecs
+[   31.939972] PM: Finishing wakeup.
+[   31.939985] Restarting tasks ... done.
+[   31.943805] PM: suspend exit 2020-10-23 22:36:37.668046400 UTC
+[   37.655454] copy_logs_to_sd (308): drop_caches: 3
+[   39.115609] sys_suspend_res (324): drop_caches: 3
+[   39.115875] PM: suspend entry 2020-10-23 22:38:14.212441100 UTC
+[   39.115889] PM: Syncing filesystems ... done.
+[   39.116088] PM: Preparing system for sleep (mem)
+[   39.116406] Freezing user space processes ... (elapsed 0.002 seconds) done.
+[   39.118439] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   39.119697] PM: Suspending system (mem)
+[   39.119710] Suspending console(s) (use no_console_suspend to debug)
+[   39.131428] PM: suspend of devices complete after 3.778 msecs
+[   39.131748] PM: late suspend of devices complete after 0.308 msecs
+[   39.132067] PM: noirq suspend of devices complete after 0.310 msecs
+[   39.132072] Disabling non-boot CPUs ...
+[   39.132076] SUSPEND
+[   39.132633] PM: noirq resume of devices complete after 0.509 msecs
+[   39.133070] PM: early resume of devices complete after 0.376 msecs
+[   39.272345] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   39.280025] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   39.283361] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   39.284039] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   39.298081] PM: resume of devices complete after 164.992 msecs
+[   39.322459] PM: Finishing wakeup.
+[   39.322473] Restarting tasks ... done.
+[   39.326466] PM: suspend exit 2020-10-23 22:38:14.423105175 UTC
+[   40.820271] womDaemon (205): drop_caches: 3
+[   40.915572] sh (335): drop_caches: 3
+[   40.927400] using random self ethernet address
+[   40.936646] using random host ethernet address
+[   40.956172] usb0: HOST MAC 96:ce:02:f4:92:7b
+[   40.962379] usb0: MAC 72:32:f8:b0:46:89
+[   40.965380] using random self ethernet address
+[   41.004619] using random host ethernet address
+[   41.016477] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[   41.016515] g_ether gadget: g_ether ready
+[   41.066299] IPv6: ADDRCONF(NETDEV_UP): usb0: link is not ready
+[   47.859188] PM: suspend entry 2020-10-23 22:38:24.612738325 UTC
+[   47.859212] PM: Syncing filesystems ... done.
+[   47.859459] PM: Preparing system for sleep (mem)
+[   47.859779] Freezing user space processes ... (elapsed 0.001 seconds) done.
+[   47.861803] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   47.863062] PM: Suspending system (mem)
+[   47.863073] Suspending console(s) (use no_console_suspend to debug)
+[   47.875241] PM: suspend of devices complete after 3.817 msecs
+[   47.875560] PM: late suspend of devices complete after 0.307 msecs
+[   47.875882] PM: noirq suspend of devices complete after 0.312 msecs
+[   47.875887] Disabling non-boot CPUs ...
+[   47.875891] SUSPEND
+[   47.876359] PM: noirq resume of devices complete after 0.426 msecs
+[   47.876696] PM: early resume of devices complete after 0.285 msecs
+[   47.980037] mmc0: queuing unknown CIS tuple 0x01 (3 bytes)
+[   47.987507] mmc0: queuing unknown CIS tuple 0x1a (5 bytes)
+[   47.990755] mmc0: queuing unknown CIS tuple 0x1b (8 bytes)
+[   47.991407] mmc0: queuing unknown CIS tuple 0x14 (0 bytes)
+[   47.994934] PM: resume of devices complete after 118.222 msecs
+[   48.019311] PM: Finishing wakeup.
+[   48.019323] Restarting tasks ... done.
+[   48.022463] PM: suspend exit 2020-10-23 22:38:40.467191100 UTC

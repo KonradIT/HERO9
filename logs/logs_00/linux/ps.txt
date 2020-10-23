@@ -1,0 +1,84 @@
+PID   USER     COMMAND
+    1 root     /sbin/finit
+    2 root     [kthreadd]
+    3 root     [ksoftirqd/0]
+    4 root     [kworker/0:0]
+    5 root     [kworker/0:0H]
+    6 root     [kworker/u4:0]
+    7 root     [rcu_preempt]
+    8 root     [rcu_sched]
+    9 root     [rcu_bh]
+   10 root     [migration/0]
+   11 root     [kdevtmpfs]
+   12 root     [netns]
+   13 root     [perf]
+   14 root     [writeback]
+   15 root     [kworker/0:1]
+   16 root     [crypto]
+   17 root     [bioset]
+   18 root     [kblockd]
+   19 root     [kworker/u4:1]
+   20 root     [kswapd0]
+   21 root     [vmstat]
+   22 root     [fsnotify_mark]
+   23 root     [ipcufs_recv]
+   38 root     [bioset]
+   39 root     [bioset]
+   40 root     [bioset]
+   41 root     [bioset]
+   42 root     [bioset]
+   43 root     [bioset]
+   44 root     [bioset]
+   45 root     [bioset]
+   46 root     [bioset]
+   47 root     [bioset]
+   48 root     [bioset]
+   49 root     [bioset]
+   50 root     [bioset]
+   51 root     [bioset]
+   52 root     [bioset]
+   53 root     [bioset]
+   54 root     [bioset]
+   55 root     [bioset]
+   58 root     [ipv6_addrconf]
+   59 root     [kworker/u4:2]
+   68 root     [deferwq]
+   69 root     [vblk_recv]
+   70 root     [bioset]
+   71 root     [kworker/u4:3]
+   72 root     [jbd2/nandblk-8]
+   73 root     [ext4-rsv-conver]
+   74 root     -sh
+   77 root     /sbin/udevd
+   87 root     /sbin/syslogd -n -S -s 400 -b 2 -O /tmp/messages
+   90 root     /sbin/klogd -n
+  103 root     /usr/local/gopro/bin/gpChpIpc
+  105 root     /usr/local/gopro/bin/gpChpTestChannel
+  106 root     /usr/local/gopro/bin/gpUsb
+  135 root     /usr/local/gopro/bin/gpCamApi
+  137 root     /usr/local/gopro/bin/gpNet
+  138 root     /usr/bin/dswitchcpu
+  142 root     /usr/local/gopro/bin/gpBtMan
+  147 root     [cfg80211]
+  151 root     /usr/local/gopro/bin/gpAth
+  153 root     /usr/local/gopro/bin/gpUdp
+  171 root     [uether]
+  173 root     avahi-daemon: running [REDACTED.local]
+  189 root     busybox udhcpd /tmp/udhcpd.usb1.conf
+  192 root     /usr/local/gopro/bin/gpPlatform
+  193 root     {respawn} /bin/sh /usr/local/gopro/scripts/respawn /usr/local/gopro/bin/gpHttpServer
+  194 root     {respawn-pid} /bin/sh /usr/local/gopro/scripts/respawn-pid /usr/local/gopro/bin/gpControlD
+  201 root     /usr/local/gopro/bin/gpHttpServer
+  202 root     /usr/local/gopro/bin/gpControlD
+  205 root     /usr/local/gopro/bin/womDaemon
+  266 root     [exe]
+  288 root     [exe]
+  327 root     [exe]
+  348 root     busybox udhcpd /tmp/udhcpd.usb1.conf
+  350 root     /bin/sleep 20
+  352 root     [irq/23-mmc0]
+  381 root     /sbin/udevd
+  382 root     /sbin/udevd
+  384 root     sh -c test -f /tmp/fuse_d/save_logs.txt && /usr/local/gopro/scripts/copy_logs_to_sd.sh
+  385 root     {copy_logs_to_sd} /bin/sh /usr/local/gopro/scripts/copy_logs_to_sd.sh
+  394 root     ps

@@ -1,0 +1,8 @@
+Module                  Size  Used by
+usb_f_ecm               5720  0 
+usb_f_rndis            13603  0 
+u_ether                10523  2 usb_f_ecm,usb_f_rndis
+libcomposite           35346  2 usb_f_ecm,usb_f_rndis
+configfs               20828  4 usb_f_ecm,usb_f_rndis,libcomposite
+cfg80211              168264  0 
+compat                  1134  1 cfg80211
